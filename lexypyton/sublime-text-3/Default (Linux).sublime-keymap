@@ -1,0 +1,4 @@
+[
+	{ "keys": ["ctrl+e"], "command": "example" },
+	{ "keys": ["ctrl+t"], "command": "test_replace" }
+]
