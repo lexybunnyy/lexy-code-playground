@@ -1,0 +1,22 @@
+Feladat:
+	Egy olyan parse-oló létrehozása, mely feldolgozza az adatokat, össze számlálja hogy miből mennyi volt, és példaként előállít egy új adathalmazt xml stílusban
+
+	pl: 
+	<!--Find 3 times -->
+	<error parameter="12">
+		Error Log - 12 - hello
+		error x not found
+		error lepeles
+	</error>
+
+Ezeket az adatokat soronkénti RegExp-ekkel oldjuk meg. 
+
+Fejlesztési terv:
+	soronkénti fájlolvasó implementálása
+	soronként vissza írja nekünk az adatokat
+
+	fájl író létrehozása
+
+	Regexp parser létrehozása
+	Közös pontok alapján való szűrés megvalósítás
+
