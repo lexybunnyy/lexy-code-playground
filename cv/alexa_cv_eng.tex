@@ -1,0 +1,158 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage[export]{adjustbox}
+\usepackage{t1enc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,hungarian]{babel}
+\selectlanguage{hungarian}
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Alexandra}
+\familyname{Cselyuszka}
+\title{Software Developer}                          % optional, remove / comment the line if not wanted
+%\address{Székesfehérvár, Rózsahegyi street 11}{8000}    % optional, remove / comment the line if not wanted
+\mobile{(+36) 70/977-8006}                   % optional, remove / comment the line if not wanted
+\homepage{lexybunnyy.net}                    % optional, remove / comment the line if not wanted
+\photo[125pt][0.9pt]{cv-photo}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Profile}
+I've absolved in 2014 at ELTE Faculty of Informatics and I have been working since then. I like learning from other people and working in a team. I like immersing in independent research work and I enjoy the planning part as well. I would consider myself a cheerful and smiley person.
+
+\begin{wrapfigure}[0]{r}{0.9\linewidth}
+  \bigskip
+  \bigskip
+  \includegraphics[width=0.2\linewidth, right]{play-n-go-logo.png}
+\end{wrapfigure}
+
+\section{Work Experience}
+
+\begin{wrapfigure}[0]{r}{0.9\linewidth}
+  \bigskip
+  \bigskip
+  \bigskip
+  \bigskip
+  \includegraphics[width=0.1\linewidth, right]{vcc-logo.png}
+\end{wrapfigure}
+
+\cventry{2015 -- Now}{Software Tester/Tool Developer}{Play'n Go}{Budapest}{}
+{
+  2015 June -- Now
+  \begin{itemize}%
+  \item Test helper tools development
+  \item Python, C\# development
+  \item Test automation
+  \item Mobile device testing
+  \end{itemize}
+}
+
+\cventry{2014 -- 2015}{Software Developer}{Virtual Call Center}{Budapest}{}
+{
+  2014 February - 2015 May
+  \begin{itemize}%
+  \item JavaScript, PHP/MySQL development
+  \item Agile software development based on Scrum methodology
+  \item Use of version control system (Git)
+  \end{itemize}
+}
+
+\section{Education}
+\cventry{2010--2014}{BSC}{Eötvös Loránd University}{Budapest}{\textit{Faculty of Informatics}}
+{Informatics for Computer Programming BSc \\  Specialization in software development \\ Graduated: 2015 (thesis, final exam)}
+%\begin{wrapfigure}{r}{0.5\textwidth} \begin{center} \includegraphics[width=0.48\textwidth]{vcc-logo} \end{center} \caption{A gull} \end{wrapfigure}
+%%\begin{itemize}%
+%%\end{itemize}}
+
+\section{Languages}
+  \cvitemwithcomment{English}{Intermediate}{LEXINFO B2 Oral exam (2014)}
+
+\section{Professional skills}
+  \cvitem{Advanced}{JavaScript, Reactive programming}
+  \cvitem{Intermediate}{PHP, MySQL, CSS, HTML, Git, Object-oriented programming}
+  \cvitem{Basic}{Erlang, C++/C, Linux, C\#, Python, Distributed programming}
+
+\section{Other Qualifications}
+  \cvitem{Driver license}{B-category (2010)}
+
+\section{References}
+  \cvitem{Erlang/ C++}{BSc Thesis: Distributed computing servers}
+  \cvitem{JavaScript/ HTML}{BSc Thesis: Client Graph editor \newline{}
+  Personal website: \url{http://lexybunnyy.net/} }
+  \cvitem{Qt/ C++}{Course homeworks}
+
+
+\section{Personal Information}
+\cvitem{Name}{Alexandra Cselyuszka}
+\cvitem{E-mail}{alexandra.cselyuszka@gmail.com}
+\cvitem{Telephone}{(+36)70/977-8006}
+\cvitem{Address}{11 Rózsahegyi street, Székesfehérvár 8000, Hungary}
+\cvitem{Nationality}{Hungarian}
+\cvitem{Date and place of birth}{1991-08-06, Székesfehérvár, Hungary}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+
+\section{Hobbies and Interests}
+  \cvlistitem{Singing}
+  \cvlistitem{Skating}
+  \cvlistitem{Writing}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
