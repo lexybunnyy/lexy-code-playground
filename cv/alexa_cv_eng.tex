@@ -6,6 +6,25 @@
 % available at http://www.latex-project.org/lppl/.
 
 \documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{sidecap}
+\usepackage{tikz}      
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{epstopdf}
+%\usepackage{color}
+%\usepackage{pdflscape}
+%\usepackage[section]{placeins}
+%\usepackage{amsfonts}
+%\usepackage{xfrac}
+%\usepackage{mathrsfs}
+%\usepackage{array}
+\usepackage{color}
+\usepackage{verbatim}
+%\usepackage{titletoc}
+%\usepackage{hyperref}
+
+
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage[export]{adjustbox}
@@ -14,6 +33,9 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english,hungarian]{babel}
+\usepackage{tabularx}
+\newcommand{\frstCVcell}{2.5cm}
+
 \selectlanguage{hungarian}
 
 % moderncv themes
@@ -38,7 +60,7 @@
 %\address{Székesfehérvár, Rózsahegyi street 11}{8000}    % optional, remove / comment the line if not wanted
 \mobile{(+36) 70/977-8006}                   % optional, remove / comment the line if not wanted
 \homepage{lexybunnyy.net}                    % optional, remove / comment the line if not wanted
-\photo[125pt][0.9pt]{cv-photo}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[125pt][0.5pt]{cv-photo}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                            % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -56,58 +78,85 @@
 %\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\section{Profile}
-I've absolved in 2014 at ELTE Faculty of Informatics and I have been working since then. I like learning from other people and working in a team. I like immersing in independent research work and I enjoy the planning part as well. I would consider myself a cheerful and smiley person.
 
-\begin{wrapfigure}[0]{r}{0.9\linewidth}
-  \bigskip
-  \bigskip
-  \includegraphics[width=0.2\linewidth, right]{play-n-go-logo.png}
-\end{wrapfigure}
+%\begin{wrapfigure}[0]{r}{1.1\textwidth}
+%  \includegraphics[width=0.14\textwidth, right]{morgan-logo.jpg}
+%   \vspace{2cm}
+%  \includegraphics[width=0.14\textwidth, right]{play-n-go-logo.png}
+%  \includegraphics[width=0.09\textwidth, right]{vcc-logo.png}
+%\end{wrapfigure}
+
+%\section{Profile}
+I've absolved in 2014 at ELTE Faculty of Informatics and I have been working since then. I like learning from other people and working in a team. I like immersing in independent research work and I enjoy the planning part as well. I would consider myself a cheerful and smiley person.
 
 \section{Work Experience}
 
-\begin{wrapfigure}[0]{r}{0.9\linewidth}
-  \bigskip
-  \bigskip
-  \bigskip
-  \bigskip
-  \includegraphics[width=0.1\linewidth, right]{vcc-logo.png}
-\end{wrapfigure}
-
-\cventry{2015 -- Now}{Software Tester/Tool Developer}{Play'n Go}{Budapest}{}
-{
-  2015 June -- Now
+\begin{tabularx}{\textwidth}{p{\frstCVcell}Xc}
+  2016 - Now 
+& 
+  \textbf{Technology Analyst},
+  \textit{Morgan Stanley},
+  New York, London
+& 
+  \includegraphics[height=6mm]{morgan-logo.jpg}
+\\ & 
+  \begin{itemize}%
+  \item 2016 Febr -- 2016 May Technology Analyst Program
+  \end{itemize}
+\\
+  2015 -- 2016 
+& 
+  \textbf{Software Tester/Tool Developer},
+  \textit{Play'n Go},
+  Budapest
+& 
+  \includegraphics[height=6mm]{play-n-go-logo.png}
+\\ & 
+  2015 June -- 2016 Jan
   \begin{itemize}%
   \item Test helper tools development
   \item Python, C\# development
   \item Test automation
   \item Mobile device testing
   \end{itemize}
-}
-
-\cventry{2014 -- 2015}{Software Developer}{Virtual Call Center}{Budapest}{}
-{
+\\
+  2014 -- 2015
+& 
+  \textbf{Software Developer},
+  \textit{Virtual Call Center},
+  Budapest
+& 
+  \includegraphics[height=5mm]{vcc-logo.png}
+\\ &
   2014 February - 2015 May
   \begin{itemize}%
   \item JavaScript, PHP/MySQL development
   \item Agile software development based on Scrum methodology
   \item Use of version control system (Git)
   \end{itemize}
-}
+\end{tabularx}
 
 \section{Education}
 \cventry{2010--2014}{BSC}{Eötvös Loránd University}{Budapest}{\textit{Faculty of Informatics}}
 {Informatics for Computer Programming BSc \\  Specialization in software development \\ Graduated: 2015 (thesis, final exam)}
+
+\cventry{2016}{Training}{Morgan Stanley}{New York, London}{\textit{Technology Analyst Program}}{
+  2016 Febr -- 2016 May
+  \begin{itemize}% 
+  \item Programming Fundamentals: C++, C\#, Java, Scala
+  \item Web Technologies: JavaScript, HTML, AngularJS
+  \end{itemize}
+}
+
 %\begin{wrapfigure}{r}{0.5\textwidth} \begin{center} \includegraphics[width=0.48\textwidth]{vcc-logo} \end{center} \caption{A gull} \end{wrapfigure}
 %%\begin{itemize}%
 %%\end{itemize}}
 
 \section{Languages}
-  \cvitemwithcomment{English}{Intermediate}{LEXINFO B2 Oral exam (2014)}
+  \cvitemwithcomment{English}{Intermediate}{LEXINFO B2 (2015)}
 
 \section{Professional skills}
-  \cvitem{Advanced}{JavaScript, Reactive programming}
+  \cvitem{Advanced}{JavaScript, ReactJS}
   \cvitem{Intermediate}{PHP, MySQL, CSS, HTML, Git, Object-oriented programming}
   \cvitem{Basic}{Erlang, C++/C, Linux, C\#, Python, Distributed programming}
 
@@ -132,9 +181,7 @@ I've absolved in 2014 at ELTE Faculty of Informatics and I have been working sin
 \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
 
 \section{Hobbies and Interests}
-  \cvlistitem{Singing}
-  \cvlistitem{Skating}
-  \cvlistitem{Writing}
+  \cvlistitem{Singing, Skating, Writing}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
