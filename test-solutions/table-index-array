@@ -1,0 +1,33 @@
+/*
+export class TableIndex {
+    constructor(public x: number, public y: number) { }
+
+
+    public set(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public equals(x: number, y: number) {
+        return this.x === x && this.y === y;
+    }
+
+    static equals(t1: TableIndex, t2: TableIndex) {
+        return t1.equals(t2.x, t2.y)
+    }
+}
+
+export class TableIndexArray extends Array<TableIndex> {
+    public pushXY(x: number, y: number) {
+        this.push(new TableIndex(x, y));
+    }
+    
+    public includesXY(x: number, y: number): boolean {
+        return this.some(v => v.equals(x, y))
+    }
+
+    public clear() {
+        this.length = 0;
+    }
+}
+*/
